@@ -21,6 +21,7 @@ import Image from "next/image";
 import { ResultCard } from "./result-card";
 import { useHeartsModal } from "@/store/use-hearts-modal";
 import { usePracticeModal } from "@/store/use-practice-modal";
+import { sendDataArduino } from "@/actions/arduino-data-process";
 
 type Props = {
   initialPercentage: number;
@@ -158,7 +159,8 @@ export const Quiz = ({
     const correctOption = options.find((option) => option.correct);
     if (correctOption) {
       // Replace the following with your actual endpoint or function to send the correct answer
-      toast.success(`Correct answer: ${correctOption.text}`);
+      sendDataArduino(correctOption.text)
+      
     } else {
       toast.error("No correct answer found.");
     }

@@ -12,10 +12,11 @@ type Props = {
 };
 
 const SideBarData = [
-  { label: "Learn", href: "/learn", iconSrc: "/learn.svg" },
+  { label: "quiz", href: "/learn", iconSrc: "/learn.svg" },
   { label: "Leaderbaord", href: "/leaderboard", iconSrc: "/leaderboard.svg" },
   { label: "Quests", href: "/quests", iconSrc: "/quests.svg" },
   { label: "shop", href: "/shop", iconSrc: "/shop.svg" },
+  {label:"learn",href:"/learning", iconSrc:"/learning.svg"}
 ];
 
 export const SideBar = ({ className }: Props) => {
