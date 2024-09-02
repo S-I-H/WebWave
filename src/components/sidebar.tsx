@@ -14,9 +14,7 @@ type Props = {
 const SideBarData = [
   { label: "quiz", href: "/learn", iconSrc: "/learn.svg" },
   { label: "Leaderbaord", href: "/leaderboard", iconSrc: "/leaderboard.svg" },
-  { label: "Quests", href: "/quests", iconSrc: "/quests.svg" },
-  { label: "shop", href: "/shop", iconSrc: "/shop.svg" },
-  {label:"learn",href:"/learning", iconSrc:"/learning.svg"}
+  {label:"learn",href:"/learning", iconSrc:"/image/person.png"}
 ];
 
 export const SideBar = ({ className }: Props) => {
@@ -30,9 +28,9 @@ export const SideBar = ({ className }: Props) => {
     >
       <Link href="/learn">
         <div className="flex items-center gap-x-3 pb-7 pl-4 pt-8">
-          <Image src="/mascot.svg" alt="Mascot" height={40} width={40} />
-          <h1 className="text-2xl font-extrabold tracking-wide text-green-600">
-            DuoLingo
+          <Image src="/image/logo.png" alt="Mascot" height={18} width={18} />
+          <h1 className="text-2xl font-extrabold tracking-wide text-green-500">
+            Wave
           </h1>
         </div>
       </Link>

@@ -18,9 +18,9 @@ export const Header = () => {
        justify-between h-full "
       >
         <div className="pt-8 pl-4 pb-7 flex items-center gap-x-3">
-          <Image src="/mascot.svg" alt="Mascot" height={40} width={40} />
+          <Image src="/favicon.ico" alt="Mascot" height={20} width={20} />
           <h1 className="text-2xl text-green-600 tracking-wide font-extrabold">
-            DuoLingo
+            Wave
           </h1>
         </div>
         <ClerkLoading>

@@ -5,12 +5,12 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 export const MobileSideBar = () => {
   return (
-    <Sheet>
+    <Sheet >
       <SheetTrigger>
-        <Menu className="text-white" />
+        <Menu className="text-black" />
       </SheetTrigger>
       <SheetContent className="p-0 z-[100]" side="left">
-        <SideBar />
+        <SideBar className="bg-transparent" />
       </SheetContent>
     </Sheet>
   );

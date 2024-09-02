@@ -5,6 +5,8 @@ export const sendDataArduino=async (button:string)=>{
         console.log('Data sent to Arduino:', response?.data);
         
       } catch (error) {
+        console.log(typeof(button));
+        console.log(button)
         console.error('Error sending request:', error);
       }
 }
