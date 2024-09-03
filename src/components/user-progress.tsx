@@ -20,17 +20,6 @@ export const UserProgress = ({
 }: Props) => {
   return (
     <div className="flex w-full items-center justify-between gap-x-2">
-      <Link href="/courses">
-        <Button variant="ghost">
-          <Image
-            src={activeCourse.imageSrc}
-            alt={activeCourse.title}
-            className="rounded-md border"
-            width={32}
-            height={32}
-          />
-        </Button>
-      </Link>
       <Link href="/shop">
         <Button variant="ghost" className="text-orange-500">
           <Image

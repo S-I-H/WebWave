@@ -6,7 +6,7 @@ import 'swiper/css/autoplay';
 import { Autoplay } from 'swiper/modules';
 
 export const Footer = () => {
-  const images = ['/images/a.jpg', '/images/b.jpg', '/images/c.jpg', '/images/d.jpg']; // Update paths accordingly
+  const images = ['/apple.png', '/ball.png', '/car.png', '/duck.png']; // Update paths accordingly
 
   return (
     <footer className=" text-white py-4">
@@ -24,7 +24,7 @@ export const Footer = () => {
         >
           {images.map((src, index) => (
             <SwiperSlide key={index}>
-              <img src={src} alt={`Slide ${index + 1}`} className="w-full h-auto object-cover" />
+              <img src={src} alt={`Slide ${index + 1}`} className="w-1px h-1px" />
             </SwiperSlide>
           ))}
         </Swiper>
