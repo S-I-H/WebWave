@@ -41,7 +41,8 @@
 import axios from "axios"
 export const sendDataArduino=async (button:string)=>{
     try {
-        const response = await axios.post(`http://127.0.0.1:5001`, { button });
+        // const response = await axios.post(`http://127.0.0.1:5001`, { button });
+        const response = await axios.post(`http://192.168.184.62:5001`, { button });
         console.log('Data sent to Arduino:', response?.data);
 
       } catch (error) {
@@ -50,3 +51,4 @@ export const sendDataArduino=async (button:string)=>{
         console.error('Error sending request:', error);
       }
 }
+// 192.168.184.62
